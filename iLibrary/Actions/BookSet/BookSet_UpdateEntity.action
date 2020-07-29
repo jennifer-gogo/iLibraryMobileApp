@@ -1,0 +1,23 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"Target": {
+		"EntitySet": "BookSet",
+		"Service": "/iLibrary/Services/iLibraryService.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties":  {
+	"Author": "#Control:Author/#Value",
+	"BookID": "#Control:BookID/#Value",
+	"BookName": "#Control:BookName/#Value",
+	"Category": "#Control:Category/#Value",
+	"Description": "#Control:Description/#Value",
+	"ISBN": "#Control:ISBN/#Value",
+	"Publisher": "#Control:Publisher/#Value"
+},
+	"UpdateLinks": [],
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnSuccess": "/iLibrary/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/iLibrary/Actions/UpdateEntityFailureMessage.action"
+}

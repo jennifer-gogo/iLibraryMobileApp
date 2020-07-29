@@ -1,0 +1,20 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/iLibrary/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/iLibrary/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+	"BookID": "#Control:BookID/#Value",
+	"BorrowDate": "#Control:BorrowDate/#Value",
+	"LendingID": "#Control:LendingID/#Value",
+	"ReturnDate": "#Control:ReturnDate/#Value",
+	"UserID": "#Control:UserID/#Value"
+},
+	"Target": {
+		"EntitySet": "LendingSet",
+		"Service": "/iLibrary/Services/iLibraryService.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

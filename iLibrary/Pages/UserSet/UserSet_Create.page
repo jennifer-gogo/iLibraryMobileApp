@@ -1,0 +1,39 @@
+{
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/iLibrary/Actions/CloseModalPage_Cancel.action",
+			"Position": "left",
+			"SystemItem": "Cancel"
+		}, {
+			"OnPress": "/iLibrary/Actions/UserSet/UserSet_CreateEntity.action",
+			"Position": "right",
+			"SystemItem": "Save"
+		}]
+	},
+	"Caption": "Create Customer",
+	"Controls": [{
+		"Sections": [{
+			"Controls": [
+	{
+		"Caption": "Email",
+		"_Name": "Email",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Name",
+		"_Name": "Name",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "UserID",
+		"_Name": "UserID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "FormCellContainer",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "UserSet_Create"
+}

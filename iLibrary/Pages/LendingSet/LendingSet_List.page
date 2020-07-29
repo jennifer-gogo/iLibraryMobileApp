@@ -1,0 +1,50 @@
+{
+	"Caption": "LendingSet",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/iLibrary/Actions/LendingSet/NavToLendingSet_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{BorrowDate}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/iLibrary/Actions/LendingSet/NavToLendingSet_Detail.action",
+				"StatusImage": "",
+				"Title": "{BookID}",
+				"Footnote": "{ReturnDate}",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "{UserID}",
+				"Subhead": "{LendingID}",
+				"SubstatusText": ""
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "LendingSet",
+				"Service": "/iLibrary/Services/iLibraryService.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "LendingSet_List"
+}

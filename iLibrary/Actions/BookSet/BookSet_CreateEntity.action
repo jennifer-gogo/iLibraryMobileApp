@@ -1,0 +1,22 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/iLibrary/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/iLibrary/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+	"Author": "#Control:Author/#Value",
+	"BookID": "#Control:BookID/#Value",
+	"BookName": "#Control:BookName/#Value",
+	"Category": "#Control:Category/#Value",
+	"Description": "#Control:Description/#Value",
+	"ISBN": "#Control:ISBN/#Value",
+	"Publisher": "#Control:Publisher/#Value"
+},
+	"Target": {
+		"EntitySet": "BookSet",
+		"Service": "/iLibrary/Services/iLibraryService.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

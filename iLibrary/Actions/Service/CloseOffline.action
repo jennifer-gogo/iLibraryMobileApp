@@ -1,0 +1,10 @@
+{
+	"_Type": "Action.Type.OfflineOData.Close",
+	"Service": "/iLibrary/Services/iLibraryService.service",
+	"Force": true,
+	"ActionResult": {
+		"_Name": "close"
+	},
+	"OnSuccess": "/iLibrary/Actions/Service/CloseOfflineSuccessMessage.action",
+	"OnFailure": "/iLibrary/Actions/Service/CloseOfflineFailureMessage.action"
+}

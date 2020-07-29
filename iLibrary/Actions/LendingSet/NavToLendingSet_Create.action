@@ -1,0 +1,6 @@
+{
+	"ModalPageFullscreen": false,
+	"ModalPage": true,
+	"PageToOpen": "/iLibrary/Pages/LendingSet/LendingSet_Create.page",
+	"_Type": "Action.Type.Navigation"
+}

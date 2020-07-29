@@ -1,0 +1,18 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/iLibrary/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/iLibrary/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+	"Email": "#Control:Email/#Value",
+	"Name": "#Control:Name/#Value",
+	"UserID": "#Control:UserID/#Value"
+},
+	"Target": {
+		"EntitySet": "UserSet",
+		"Service": "/iLibrary/Services/iLibraryService.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

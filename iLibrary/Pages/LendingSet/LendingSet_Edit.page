@@ -1,0 +1,55 @@
+{
+	"Caption": "Update Customer",
+	"ActionBar": {
+		"Items": [{
+			"Position": "left",
+			"Text": "Cancel",
+			"OnPress": "/iLibrary/Actions/CloseModalPage_Cancel.action"
+		}, {
+			"Position": "right",
+			"Text": "Save",
+			"OnPress": "/iLibrary/Actions/LendingSet/LendingSet_UpdateEntity.action"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Caption": "",
+			"Controls": [
+	{
+		"Caption": "BookID",
+		"_Name": "BookID",
+		"Value": "{BookID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "BorrowDate",
+		"_Name": "BorrowDate",
+		"Value": "{BorrowDate}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "LendingID",
+		"_Name": "LendingID",
+		"Value": "{LendingID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ReturnDate",
+		"_Name": "ReturnDate",
+		"Value": "{ReturnDate}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "UserID",
+		"_Name": "UserID",
+		"Value": "{UserID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "PageOneFormCell",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "LendingSet_Edit"
+}

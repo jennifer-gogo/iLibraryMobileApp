@@ -1,0 +1,9 @@
+{
+	"Service": "/iLibrary/Services/iLibraryService.service",
+	"_Type": "Action.Type.OfflineOData.Upload",
+	"ActionResult": {
+		"_Name": "sync"
+	},
+	"OnSuccess": "/iLibrary/Actions/Service/DownloadStartedMessage.action",
+	"OnFailure": "/iLibrary/Actions/Service/SyncFailureMessage.action"
+}

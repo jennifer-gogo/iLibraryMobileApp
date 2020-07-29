@@ -1,0 +1,59 @@
+{
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/iLibrary/Actions/CloseModalPage_Cancel.action",
+			"Position": "left",
+			"SystemItem": "Cancel"
+		}, {
+			"OnPress": "/iLibrary/Actions/BookSet/BookSet_CreateEntity.action",
+			"Position": "right",
+			"SystemItem": "Save"
+		}]
+	},
+	"Caption": "Create Customer",
+	"Controls": [{
+		"Sections": [{
+			"Controls": [
+	{
+		"Caption": "Author",
+		"_Name": "Author",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "BookID",
+		"_Name": "BookID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "BookName",
+		"_Name": "BookName",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Category",
+		"_Name": "Category",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Description",
+		"_Name": "Description",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ISBN",
+		"_Name": "ISBN",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Publisher",
+		"_Name": "Publisher",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "FormCellContainer",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "BookSet_Create"
+}

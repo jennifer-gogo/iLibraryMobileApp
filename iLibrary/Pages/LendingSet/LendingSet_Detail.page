@@ -1,0 +1,66 @@
+{
+	"Caption": "LendingSet Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/iLibrary/Actions/LendingSet/NavToLendingSet_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/iLibrary/Rules/LendingSet/LendingSet_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{BookID}",
+				"Subhead": "{LendingID}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{ReturnDate}",
+				"Description": "{BorrowDate}",
+				"StatusText": "{UserID}",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": ""
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "BookID",
+		"Value": "{BookID}"
+	},
+	{
+		"KeyName": "BorrowDate",
+		"Value": "{BorrowDate}"
+	},
+	{
+		"KeyName": "LendingID",
+		"Value": "{LendingID}"
+	},
+	{
+		"KeyName": "ReturnDate",
+		"Value": "{ReturnDate}"
+	},
+	{
+		"KeyName": "UserID",
+		"Value": "{UserID}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "LendingSet_Detail"
+}

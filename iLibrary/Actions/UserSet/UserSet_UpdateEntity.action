@@ -1,0 +1,19 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"Target": {
+		"EntitySet": "UserSet",
+		"Service": "/iLibrary/Services/iLibraryService.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties":  {
+	"Email": "#Control:Email/#Value",
+	"Name": "#Control:Name/#Value",
+	"UserID": "#Control:UserID/#Value"
+},
+	"UpdateLinks": [],
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnSuccess": "/iLibrary/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/iLibrary/Actions/UpdateEntityFailureMessage.action"
+}

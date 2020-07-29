@@ -1,0 +1,21 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"Target": {
+		"EntitySet": "LendingSet",
+		"Service": "/iLibrary/Services/iLibraryService.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties":  {
+	"BookID": "#Control:BookID/#Value",
+	"BorrowDate": "#Control:BorrowDate/#Value",
+	"LendingID": "#Control:LendingID/#Value",
+	"ReturnDate": "#Control:ReturnDate/#Value",
+	"UserID": "#Control:UserID/#Value"
+},
+	"UpdateLinks": [],
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnSuccess": "/iLibrary/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/iLibrary/Actions/UpdateEntityFailureMessage.action"
+}

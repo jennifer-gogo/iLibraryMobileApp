@@ -1,0 +1,49 @@
+{
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/iLibrary/Actions/CloseModalPage_Cancel.action",
+			"Position": "left",
+			"SystemItem": "Cancel"
+		}, {
+			"OnPress": "/iLibrary/Actions/LendingSet/LendingSet_CreateEntity.action",
+			"Position": "right",
+			"SystemItem": "Save"
+		}]
+	},
+	"Caption": "Create Customer",
+	"Controls": [{
+		"Sections": [{
+			"Controls": [
+	{
+		"Caption": "BookID",
+		"_Name": "BookID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "BorrowDate",
+		"_Name": "BorrowDate",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "LendingID",
+		"_Name": "LendingID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ReturnDate",
+		"_Name": "ReturnDate",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "UserID",
+		"_Name": "UserID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "FormCellContainer",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "LendingSet_Create"
+}

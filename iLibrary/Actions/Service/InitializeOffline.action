@@ -1,0 +1,25 @@
+{
+	"Service": "/iLibrary/Services/iLibraryService.service",
+	"DefiningRequests": [
+	{
+		"Name": "BookSet",
+		"Query": "BookSet"
+	},
+	{
+		"Name": "LendingSet",
+		"Query": "LendingSet"
+	},
+	{
+		"Name": "UserSet",
+		"Query": "UserSet"
+	}
+],
+	"_Type": "Action.Type.OfflineOData.Initialize",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Downloading...",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnSuccess": "/iLibrary/Actions/Service/InitializeOfflineSuccessMessage.action",
+	"OnFailure": "/iLibrary/Actions/Service/InitializeOfflineFailureMessage.action"
+}

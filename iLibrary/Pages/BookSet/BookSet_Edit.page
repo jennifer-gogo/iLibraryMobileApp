@@ -1,0 +1,67 @@
+{
+	"Caption": "Update Customer",
+	"ActionBar": {
+		"Items": [{
+			"Position": "left",
+			"Text": "Cancel",
+			"OnPress": "/iLibrary/Actions/CloseModalPage_Cancel.action"
+		}, {
+			"Position": "right",
+			"Text": "Save",
+			"OnPress": "/iLibrary/Actions/BookSet/BookSet_UpdateEntity.action"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Caption": "",
+			"Controls": [
+	{
+		"Caption": "Author",
+		"_Name": "Author",
+		"Value": "{Author}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "BookID",
+		"_Name": "BookID",
+		"Value": "{BookID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "BookName",
+		"_Name": "BookName",
+		"Value": "{BookName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Category",
+		"_Name": "Category",
+		"Value": "{Category}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Description",
+		"_Name": "Description",
+		"Value": "{Description}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ISBN",
+		"_Name": "ISBN",
+		"Value": "{ISBN}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Publisher",
+		"_Name": "Publisher",
+		"Value": "{Publisher}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "PageOneFormCell",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "BookSet_Edit"
+}

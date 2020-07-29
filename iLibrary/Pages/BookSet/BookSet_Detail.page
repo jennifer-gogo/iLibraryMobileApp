@@ -1,0 +1,74 @@
+{
+	"Caption": "BookSet Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/iLibrary/Actions/BookSet/NavToBookSet_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/iLibrary/Rules/BookSet/BookSet_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{Author}",
+				"Subhead": "{BookName}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{Category}",
+				"Description": "{BookID}",
+				"StatusText": "{Description}",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": "{ISBN}"
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "Author",
+		"Value": "{Author}"
+	},
+	{
+		"KeyName": "BookID",
+		"Value": "{BookID}"
+	},
+	{
+		"KeyName": "BookName",
+		"Value": "{BookName}"
+	},
+	{
+		"KeyName": "Category",
+		"Value": "{Category}"
+	},
+	{
+		"KeyName": "Description",
+		"Value": "{Description}"
+	},
+	{
+		"KeyName": "ISBN",
+		"Value": "{ISBN}"
+	},
+	{
+		"KeyName": "Publisher",
+		"Value": "{Publisher}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "BookSet_Detail"
+}

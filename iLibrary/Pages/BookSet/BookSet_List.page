@@ -1,0 +1,50 @@
+{
+	"Caption": "BookSet",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/iLibrary/Actions/BookSet/NavToBookSet_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{BookID}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/iLibrary/Actions/BookSet/NavToBookSet_Detail.action",
+				"StatusImage": "",
+				"Title": "{Author}",
+				"Footnote": "{Category}",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "{Description}",
+				"Subhead": "{BookName}",
+				"SubstatusText": "{ISBN}"
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "BookSet",
+				"Service": "/iLibrary/Services/iLibraryService.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "BookSet_List"
+}

@@ -1,0 +1,6 @@
+{
+	"ModalPageFullscreen": false,
+	"ModalPage": true,
+	"PageToOpen": "/iLibrary/Pages/BookSet/BookSet_Create.page",
+	"_Type": "Action.Type.Navigation"
+}
