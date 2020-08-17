@@ -1,0 +1,4 @@
+{
+	"AllowCancel": true,
+	"_Type": "Action.Type.VerifyPasscode"
+}
